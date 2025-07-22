@@ -136,11 +136,6 @@ header{
     rgb(19, 19, 24) 50%,
     rgb(14, 13, 13) 100%
     );
-    /* background-image: 
-    url("416aa7c26e5c40657ec969d850ff246afcd4510e.png");
-    background-repeat: no-repeat;
-    background-position: 25vw center;
-    background-size: 550px; */
     position: absolute;
     top: 12.5vh;
     /* left: 8vw; */
@@ -347,6 +342,145 @@ header{
         
     }
 }
+.favfruits{
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 125vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    .fruhead{
+        width: 75%;
+        height: 10vh;
+        margin: 5% 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+        p{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+    }
+    hr{
+        width: 75%;
+        border: 0;
+        height: 2px;
+        border-radius: 25%;
+        background-color: rgba(135, 134, 134, 0.726);
+    }
+    .container{
+        /* background-color: blue; */
+        width: 75%;
+        margin: 2% 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+        grid-template-rows: repeat(auto-fit,minmax(23%,1fr));
+        justify-content: center;
+        /* grid-template-rows: 90%; */
+        gap: 2%;
+        /* justify-content: space-between; */
+        .fruit{
+            background-color: rgb(24, 24, 26);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+                width: 100%;
+                height: 50%;
+            }
+            h3{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                margin: 5px 10px;
+            }
+            p{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: rgba(201, 200, 200, 0.726);
+                font-weight: 100;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                margin: 0 10px ;
+            }
+            .price{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 5px 10px;
+                gap: 20%;
+                h3{
+                    font-size: 20px;
+                    margin: 0;
+                }
+                p{
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    color: rgba(153, 152, 152, 0.726);
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-decoration: line-through;
+                }
+            }
+            .foot{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin: 15px 10px;
+                .quantity-button{
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color:rgb(24, 24, 26);
+                    border: 1px solid rgb(255, 255, 255);
+                    border-radius: 2px;
+                    padding: 10px 5px;
+                    p{
+                        color: white;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                    }
+                }
+                .buy-button{
+                    color: white;
+                    background-color: rgb(222, 199, 0);
+                    width: 40%;
+                    padding: 15px;
+                    border: 0;
+                    border-radius: 2px;
+                    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                }
+            }
+        }
+    }
+}
     /* 1200  992  768  576  480  360 */
 
 @media screen and (max-width:1200px) and (min-width:992px){
@@ -507,6 +641,9 @@ header{
             }
         }
     }
+}
+.favfruits{
+    top: 145vh;
 }
 }
 
@@ -670,6 +807,9 @@ header{
             }
         }
     }
+}
+.favfruits{
+    top: 12vh;
 }
 }
 
@@ -880,6 +1020,9 @@ header{
         }
     }
 }
+.favfruits{
+    top: 7vh;
+}
 }
 
 
@@ -980,7 +1123,7 @@ header{
         width: 70%;
         position: absolute;
         left: 20%;
-        bottom: 30%;
+        bottom: 20%;
         z-index: 0;
     }
     .Fruits{
@@ -1107,6 +1250,14 @@ header{
                 height: 100%;
             }
         }
+    }
+}
+.favfruits{
+    top: 7vh;
+    /* height: 120vh; */
+    .container{
+        /* grid-template-rows: repeat(auto-fit,minmax(13%,1fr)); */
+        grid-template-rows: repeat(4,1fr);
     }
 }
 }
